@@ -452,7 +452,7 @@ ou **exportez vos données manuelles** depuis le Mode Manuel.
             # Aperçu des données
             with st.expander("🔍 Aperçu des données importées"):
                 st.markdown("**Matrice des coûts (Couts)**")
-                st.dataframe(costs_df.style.background_gradient(cmap="Blues"),
+                st.dataframe(costs_df,
                              use_container_width=True)
                 cc1, cc2 = st.columns(2)
                 with cc1:
